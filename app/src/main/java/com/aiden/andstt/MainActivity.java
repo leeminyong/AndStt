@@ -1,4 +1,4 @@
-package com.sriyanksiddhartha.speechtotext;
+package com.aiden.andstt;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -24,6 +24,10 @@ public class MainActivity extends AppCompatActivity {
 		txvResult = findViewById(R.id.txvResult);
 	}
 
+	/**
+	 * 버튼 클릭시 음성을 입력한다.
+	 * @param view
+	 */
 	public void getSpeechInput(View view) {
 
 		Intent intent = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
